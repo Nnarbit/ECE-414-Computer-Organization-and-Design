@@ -1,0 +1,24 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Dec 01 14:58:05 2022
+
+drc -z top_level.ncd top_level.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   dummy_unit1/T1/SE4/state[2]_GND_22_o_Mux_31_o is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   dummy_unit1/T1/SE4/SE1/opcode[3]_opcode[1]_MUX_94_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net dummy_unit1/T1/SE4/SE1/MB_G
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   dummy_unit1/T1/SE4/state[2]_GND_26_o_Mux_35_o is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

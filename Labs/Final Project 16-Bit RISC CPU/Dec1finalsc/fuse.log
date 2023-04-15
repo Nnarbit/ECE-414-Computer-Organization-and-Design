@@ -1,0 +1,53 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/raini/Desktop/414 labs/Dec1finalsc/tb_top_level_isim_beh.exe -prj C:/Users/raini/Desktop/414 labs/Dec1finalsc/tb_top_level_beh.prj work.tb_top_level work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/raini/Desktop/414 labs/Dec1finalsc/ipcore_dir/ip_rom_input_code.v" into library work
+Analyzing Verilog file "C:/Users/raini/Desktop/414 labs/Dec1finalsc/ipcore_dir/ip_ram_output_code.v" into library work
+Analyzing Verilog file "C:/Users/raini/Desktop/414 labs/Dec1finalsc/top_level.v" into library work
+Analyzing Verilog file "C:/Users/raini/Desktop/414 labs/Dec1finalsc/tb_top_level.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Users/raini/Desktop/414 labs/Dec1finalsc/UART_TX_CTRL.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="artix...
+Compiling module ip_rom_input_code
+Compiling module program_counter
+Compiling module instruction_reg(nBit=16)
+Compiling module instruction_decoder
+Compiling module control_logic(nBit=16)
+Compiling module controller(nBit=16)
+Compiling module register_file(nBit=16)
+Compiling module half_adder
+Compiling module full_adder
+Compiling module add_sub(nBit=16)
+Compiling module ALU(nBit=16)
+Compiling module ShiftArray(nBit=16)
+Compiling module FunctionalUnit(nBit=16)
+Compiling module datapath(nBit=16)
+Compiling module CPU
+Compiling module read_from_ram
+Compiling module read_ram_and_uart
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="artix...
+Compiling module ip_ram_output_code
+Compiling module top_level
+Compiling module tb_top_level
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity UART_TX_CTRL [uart_tx_ctrl_default]
+Time Resolution for simulation is 1ps.
+Waiting for 17 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Compiled 28 Verilog Units
+Built simulation executable C:/Users/raini/Desktop/414 labs/Dec1finalsc/tb_top_level_isim_beh.exe
+Fuse Memory Usage: 40456 KB
+Fuse CPU Usage: 671 ms

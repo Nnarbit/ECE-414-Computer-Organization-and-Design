@@ -1,0 +1,4 @@
+vhdl work "UART_TX_CTRL.vhd"
+verilog work "ipcore_dir/ip_rom_input_code.v"
+verilog work "ipcore_dir/ip_ram_output_code.v"
+verilog work "top_level.v"

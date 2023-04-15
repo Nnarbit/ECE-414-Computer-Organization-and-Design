@@ -1,0 +1,227 @@
+ -------------------------------------------------------------------------------- 
+ Release 14.7 Trace  (nt) 
+ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. 
+  
+ C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 1 -n 
+ 3 -fastpaths -xml MUX_2to1.twx MUX_2to1.ncd -o MUX_2to1.twr MUX_2to1.pcf -ucf 
+ MUX_2to1.ucf 
+  
+ Design file:              MUX_2to1.ncd 
+ Physical constraint file: MUX_2to1.pcf 
+ Device,package,speed:     xc7a100t,csg324,C,-1 (PRODUCTION 1.10 2013-10-13) 
+ Report level:             verbose report 
+  
+ Environment Variable      Effect  
+ --------------------      ------  
+ NONE                      No environment variables were set 
+ -------------------------------------------------------------------------------- 
+  
+  
+ INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612). 
+ INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths  
+    option. All paths that are not constrained will be reported in the  
+    unconstrained paths section(s) of the report. 
+ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on  
+    a 50 Ohm transmission line loading model.  For the details of this model,  
+    and for more information on accounting for different loading conditions,  
+    please see the device datasheet. 
+  
+ ================================================================================ 
+ Timing constraint: TS_pad2pad = MAXDELAY FROM TIMEGRP "inputs" TO TIMEGRP "outputs" 20 ns; 
+ For more information, see From:To (Multicycle) Analysis in the Timing Closure User Guide (UG612). 
+  3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints 
+  0 timing errors detected. (0 setup errors, 0 hold errors) 
+  Maximum delay is   8.446ns. 
+ -------------------------------------------------------------------------------- 
+  
+ Paths for end point Out (T8.PAD), 3 paths 
+ -------------------------------------------------------------------------------- 
+ Slack (slowest paths):  11.554ns (requirement - data path) 
+   Source:               In<1> (PAD) 
+   Destination:          Out (PAD) 
+   Requirement:          20.000ns 
+   Data Path Delay:      8.446ns (Levels of Logic = 3) 
+  
+   Maximum Data Path at Slow Process Corner: In<1> to Out 
+     Location             Delay type         Delay(ns)  Physical Resource 
+                                                        Logical Resource(s) 
+     -------------------------------------------------  ------------------- 
+     U9.I                 Tiopi                 1.513   In<1> 
+                                                        In<1> 
+                                                        In_1_IBUF 
+     SLICE_X88Y53.A1      net (fanout=1)        1.447   In_1_IBUF 
+     SLICE_X88Y53.A       Tilo                  0.124   Out_OBUF 
+                                                        Out1 
+     T8.O                 net (fanout=1)        1.810   Out_OBUF 
+     T8.PAD               Tioop                 3.552   Out 
+                                                        Out_OBUF 
+                                                        Out 
+     -------------------------------------------------  --------------------------- 
+     Total                                      8.446ns (5.189ns logic, 3.257ns route) 
+                                                        (61.4% logic, 38.6% route) 
+  
+ -------------------------------------------------------------------------------- 
+ Slack (slowest paths):  11.620ns (requirement - data path) 
+   Source:               In<0> (PAD) 
+   Destination:          Out (PAD) 
+   Requirement:          20.000ns 
+   Data Path Delay:      8.380ns (Levels of Logic = 3) 
+  
+   Maximum Data Path at Slow Process Corner: In<0> to Out 
+     Location             Delay type         Delay(ns)  Physical Resource 
+                                                        Logical Resource(s) 
+     -------------------------------------------------  ------------------- 
+     U8.I                 Tiopi                 1.482   In<0> 
+                                                        In<0> 
+                                                        In_0_IBUF 
+     SLICE_X88Y53.A2      net (fanout=1)        1.412   In_0_IBUF 
+     SLICE_X88Y53.A       Tilo                  0.124   Out_OBUF 
+                                                        Out1 
+     T8.O                 net (fanout=1)        1.810   Out_OBUF 
+     T8.PAD               Tioop                 3.552   Out 
+                                                        Out_OBUF 
+                                                        Out 
+     -------------------------------------------------  --------------------------- 
+     Total                                      8.380ns (5.158ns logic, 3.222ns route) 
+                                                        (61.6% logic, 38.4% route) 
+  
+ -------------------------------------------------------------------------------- 
+ Slack (slowest paths):  12.021ns (requirement - data path) 
+   Source:               S (PAD) 
+   Destination:          Out (PAD) 
+   Requirement:          20.000ns 
+   Data Path Delay:      7.979ns (Levels of Logic = 3) 
+  
+   Maximum Data Path at Slow Process Corner: S to Out 
+     Location             Delay type         Delay(ns)  Physical Resource 
+                                                        Logical Resource(s) 
+     -------------------------------------------------  ------------------- 
+     R7.I                 Tiopi                 1.504   S 
+                                                        S 
+                                                        S_IBUF 
+     SLICE_X88Y53.A5      net (fanout=1)        0.989   S_IBUF 
+     SLICE_X88Y53.A       Tilo                  0.124   Out_OBUF 
+                                                        Out1 
+     T8.O                 net (fanout=1)        1.810   Out_OBUF 
+     T8.PAD               Tioop                 3.552   Out 
+                                                        Out_OBUF 
+                                                        Out 
+     -------------------------------------------------  --------------------------- 
+     Total                                      7.979ns (5.180ns logic, 2.799ns route) 
+                                                        (64.9% logic, 35.1% route) 
+  
+ -------------------------------------------------------------------------------- 
+ Hold Paths: TS_pad2pad = MAXDELAY FROM TIMEGRP "inputs" TO TIMEGRP "outputs" 20 ns; 
+ -------------------------------------------------------------------------------- 
+  
+ Paths for end point Out (T8.PAD), 3 paths 
+ -------------------------------------------------------------------------------- 
+ Delay (fastest path):   2.314ns (data path) 
+   Source:               S (PAD) 
+   Destination:          Out (PAD) 
+   Data Path Delay:      2.314ns (Levels of Logic = 3) 
+  
+   Minimum Data Path at Fast Process Corner: S to Out 
+     Location             Delay type         Delay(ns)  Physical Resource 
+                                                        Logical Resource(s) 
+     -------------------------------------------------  ------------------- 
+     R7.I                 Tiopi                 0.272   S 
+                                                        S 
+                                                        S_IBUF 
+     SLICE_X88Y53.A5      net (fanout=1)        0.370   S_IBUF 
+     SLICE_X88Y53.A       Tilo                  0.045   Out_OBUF 
+                                                        Out1 
+     T8.O                 net (fanout=1)        0.374   Out_OBUF 
+     T8.PAD               Tioop                 1.253   Out 
+                                                        Out_OBUF 
+                                                        Out 
+     -------------------------------------------------  --------------------------- 
+     Total                                      2.314ns (1.570ns logic, 0.744ns route) 
+                                                        (67.8% logic, 32.2% route) 
+ -------------------------------------------------------------------------------- 
+ Delay (fastest path):   2.460ns (data path) 
+   Source:               In<0> (PAD) 
+   Destination:          Out (PAD) 
+   Data Path Delay:      2.460ns (Levels of Logic = 3) 
+  
+   Minimum Data Path at Fast Process Corner: In<0> to Out 
+     Location             Delay type         Delay(ns)  Physical Resource 
+                                                        Logical Resource(s) 
+     -------------------------------------------------  ------------------- 
+     U8.I                 Tiopi                 0.250   In<0> 
+                                                        In<0> 
+                                                        In_0_IBUF 
+     SLICE_X88Y53.A2      net (fanout=1)        0.538   In_0_IBUF 
+     SLICE_X88Y53.A       Tilo                  0.045   Out_OBUF 
+                                                        Out1 
+     T8.O                 net (fanout=1)        0.374   Out_OBUF 
+     T8.PAD               Tioop                 1.253   Out 
+                                                        Out_OBUF 
+                                                        Out 
+     -------------------------------------------------  --------------------------- 
+     Total                                      2.460ns (1.548ns logic, 0.912ns route) 
+                                                        (62.9% logic, 37.1% route) 
+ -------------------------------------------------------------------------------- 
+ Delay (fastest path):   2.508ns (data path) 
+   Source:               In<1> (PAD) 
+   Destination:          Out (PAD) 
+   Data Path Delay:      2.508ns (Levels of Logic = 3) 
+  
+   Minimum Data Path at Fast Process Corner: In<1> to Out 
+     Location             Delay type         Delay(ns)  Physical Resource 
+                                                        Logical Resource(s) 
+     -------------------------------------------------  ------------------- 
+     U9.I                 Tiopi                 0.281   In<1> 
+                                                        In<1> 
+                                                        In_1_IBUF 
+     SLICE_X88Y53.A1      net (fanout=1)        0.555   In_1_IBUF 
+     SLICE_X88Y53.A       Tilo                  0.045   Out_OBUF 
+                                                        Out1 
+     T8.O                 net (fanout=1)        0.374   Out_OBUF 
+     T8.PAD               Tioop                 1.253   Out 
+                                                        Out_OBUF 
+                                                        Out 
+     -------------------------------------------------  --------------------------- 
+     Total                                      2.508ns (1.579ns logic, 0.929ns route) 
+                                                        (63.0% logic, 37.0% route) 
+ -------------------------------------------------------------------------------- 
+  
+  
+ All constraints were met. 
+  
+  
+ Data Sheet report: 
+ ----------------- 
+ All values displayed in nanoseconds (ns) 
+  
+ Pad to Pad 
+ ---------------+---------------+---------+ 
+ Source Pad     |Destination Pad|  Delay  | 
+ ---------------+---------------+---------+ 
+ In<0>          |Out            |    8.380| 
+ In<1>          |Out            |    8.446| 
+ S              |Out            |    7.979| 
+ ---------------+---------------+---------+ 
+  
+  
+ Timing summary: 
+ --------------- 
+  
+ Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0) 
+  
+ Constraints cover 3 paths, 0 nets, and 4 connections 
+  
+ Design statistics: 
+    Maximum path delay from/to any node:   8.446ns 
+  
+  
+ Analysis completed Thu Sep 15 22:39:01 2022  
+ -------------------------------------------------------------------------------- 
+  
+ Trace Settings: 
+ ------------------------- 
+ Trace Settings  
+  
+ Peak Memory Usage: 402 MB 
+  
+  

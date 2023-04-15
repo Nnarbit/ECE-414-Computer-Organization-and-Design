@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\raini\Desktop\414 labs\Dec1finalsc\top_level.ncd
+OUTFILE=C:\Users\raini\Desktop\414 labs\Dec1finalsc\top_level.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=C:\Users\raini\Desktop\414 labs\Dec1finalsc
+LICENSE=WebPack
+USER_INFO=212534728_0_0_310
